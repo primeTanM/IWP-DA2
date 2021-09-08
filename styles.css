@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600,800');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+	margin: 0;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 600;  
+}
+
+body.home {
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: #55d6aa;
+  padding-bottom: 20px;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+  font-weight: 800;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.heading {
+    height: 100px;
+    background: #222;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #55d6aa;
+    gap: 20px;
+    font-size: 25px;
+    
+}
+
+
+.logo img {
+    height: 75px;
+    width: 75px;
+}
+
+.type {
+    font-family: 'Architects Daughter', cursive;
+    color: #F8A01A;
+    font-size: 20px;
+}
+
+.content {
+    margin: 3% 20%;
+}
+
+.content p {
+    padding: 10px 0;
+    font-size: 15px;
+    animation-duration: 3s;
+    animation-name: slidein;
+    background-color: #444;
+    color: #F6C101;
+}
+
+.content a {
+    color: #55d6aa;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-right: 0%;
+      width: 100%;
+    }
+  }
+
+.content img {
+    width: 100%;
+    height: 600px;
+}
+
+/* library.html */
+
+@import url('https://fonts.googleapis.com/css?family=Sofia');
+  
+
+.layout {
+  display: grid;
+  grid-template: 20px 40px auto / auto 300px 300px 300px auto;
+  grid-gap: 10px;
+  color: #222222;
+}
+
+.title {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  
+}
+
+.imageGalleryVault {
+  display: grid;
+  grid-template: repeat(3, 200px) / repeat(3, 300px);
+  grid-gap: 10px;
+  margin: 50px 50px 50px 50px;
+  align-content: center;
+  justify-content: center;
+  grid-column: 2 / span 3;
+  grid-row: 3 / span 1;
+}
+
+.imageGalleryLibrary {
+    display: grid;
+    grid-template: repeat(3, 300px) / repeat(3, 300px);
+    grid-gap: 10px;
+    margin: 50px 50px 50px 50px;
+    align-content: center;
+    justify-content: center;
+    grid-column: 2 / span 3;
+    grid-row: 3 / span 1;
+  }
+
+
+.imageGalleryLibrary img {
+  cursor: pointer;
+  width: 300px;
+  height: 300px;
+}
+
+.modal {
+  position: fixed;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform: rotate(-20deg);
+  background-color: white;
+  padding: 25px 25px 25px 25px;
+  display: grid;
+  grid-template: 320px 50px / 320px;
+}
+
+.modalHolder {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.boxPhoto {
+  width: 320px;
+}
+
+.closeButton {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
+  text-align: right;
+  font-size: 2em;
+  font-family: 'Arial Black';
+  cursor: pointer;
+}

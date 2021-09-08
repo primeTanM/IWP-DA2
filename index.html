@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beats-Home</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="./script.js"></script>
+</head>
+<body class="home">
+  <section id="homepage">
+    <div class="heading">
+        <div class="logo">
+          <img src="./images/music-notes.png" alt="">
+          <h1>BEATS</h1>
+        </div>
+
+        <div class="type">
+          <h1>Music Archive</h1>
+        </div>
+    </div>
+
+
+    <header>
+        <div class="container">
+          <h1 class="logo"></h1>
+    
+          <nav>
+            <ul>
+              <li><a href="#homepage">Home</a></li>
+              <li><a href="#librarypage">Library</a></li>
+              <li><a href="#vaultpage">Vault</a></li>
+              <li><a href="#">Nibbles</a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+    
+  
+    <div class="content">
+      <p>Welcome to the BEATS.The resources of this Archive are consolidated in the <a href="vault.html">vault</a>.This is an integral part of the archive</p>
+
+      <img src="./images/home-img.jpg" usemap="#image-map" alt="Music girl">
+      <map name="image-map">
+          <area target="_blank" alt="" title="" href="https://music.youtube.com/" coords="392,599,404,512,403,483,383,471,317,445,274,414,168,328,129,151,238,56,315,168,419,179,521,227,564,242,605,451,611,599" shape="poly">
+      </map>
+    </div>
+  </section>
+
+
+  <section id="librarypage">
+    <div class="layout">
+      <div class="title">
+          <h1>Library</h1>
+          <p>A collection of music photos</p>
+      </div>
+      <div class="imageGalleryLibrary">
+    
+        <img class="image" src="./images/img1.jpg" onclick="handlers.open('0')">
+        <img class="image" src="./images/img2.jpg" onclick="handlers.open('1')">
+        <img class="image" src="./images/img3.jpg" onclick="handlers.open('2')">
+        <img class="image" src="./images/img4.jpg" onclick="handlers.open('3')">
+        <img class="image" src="./images/img5.jpg" onclick="handlers.open('4')">
+        <img class="image" src="./images/img6.jpg" onclick="handlers.open('5')">
+        <img class="image" src="./images/img7.jpg" onclick="handlers.open('6')">
+        <img class="image" src="./images/img8.jpg" onclick="handlers.open('7')">
+        <img class="image" src="./images/img9.jpg" onclick="handlers.open('8')">
+      </div>
+    
+    </div>
+    <div id="modalHolder">
+    
+    </div>
+  </section>
+
+
+  <section id="vaultpage">
+    <div class="layout">
+      <div class="title">
+          <h1>Vault</h1>
+          <p>Music videos and photos</p>
+      </div>
+      <div class="imageGalleryVault">
+        <!-- <img class="image" src="./images/img1.jpg" onclick="handlers.open('0')">
+        <img class="image" src="./images/img2.jpg" onclick="handlers.open('1')">
+        <img class="image" src="./images/img3.jpg" onclick="handlers.open('2')">   -->
+
+        <iframe src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" style="border:none;height:200px;width:300px;" title="Iframe Example"></iframe> 
+
+        <iframe src="https://images.pexels.com/photos/144429/pexels-photo-144429.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" style="border:none;height:200px;width:300px;" title="Iframe Example"></iframe>
+
+        <iframe src="https://images.pexels.com/photos/1021876/pexels-photo-1021876.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" style="border:none;height:200px;width:300px;" title="Iframe Example"></iframe>
+
+      <iframe width="920" height="450" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+      </iframe>
+
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
+
